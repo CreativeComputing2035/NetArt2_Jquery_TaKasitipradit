@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A page for exploring basic HTML documents">
+    <title>HTML Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     <script src="jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <div class="img2">
+     <img id="trying" src="nosnow.jpg" width= "100%">
+      
+    <script>
+        
+    $(function() {
+        
+        var a = "snow1.jpg"
+        var b = "snow2.jpg"
+        var c = "snow3.jpg"
+        var d = "snow4.jpg"
+        var e = "snow5.jpg"
+        var f = "snow6.jpg"
+        var g = "snow7.jpg"
+        var h = "snow8.jpg"
+        var i = "snow9.jpg" 
+        var j = "snow10.jpg"
+        var k = "snow11.jpg"
+        var l = "snow12.jpg"
+        var n = "erase.jpg"
+        var o = "erase1.jpg"
+        var p = "erase2.jpg"
+        var q = "erase3.jpg"
+        var r = "erase4.jpg"
+        var s = "erase5.jpg"
+        var t = "erase6.jpg"
+        var u = "erase7.jpg"
+        var v = "erase8.jpg"
+        var w = "nosnow.jpg"
+
+
+        var backgrounds = [a, a, b, b, c, c, d, d, f, f, g, g, h, h, i, i,  j, j, k, k, l, l, n, n, o, o, p, p, q, q, r, r, s, s, t, t, u, u, v, v, w, w]
+        var i = 0;
+        document.body.addEventListener("mousemove", function() {
+            if (i === 40) {
+                i = 0;
+            } else {
+                i += 1;
+            }
+            document.getElementById("trying").src = backgrounds[i];
+            
+        });
+        
+    });
+
+    
+</script>
+  
+        
+        
+        
+    </div>
+  
+
+
+</body>
+</html>
